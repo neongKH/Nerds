@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Магазин Nerds</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="css/nerdstyle.css"> 
+	</head>
+<body>
+<header class="main-header">
+	<div class="container">
+		<nav class="main-navigation">
+				<a class="main-header-logo" href="nerds/nerds-main-web.html"> 
+				<img src="img/nerds-logo.svg" class="nerds-logo" alt="Nerds Лого"></a>
+				<div class="main-header-links">
+					<ul class="site-navigation">
+						<li> <a href="studio.html">Студия</a></li>
+						<li> <a href="customers.html">Клиенты</a></li>
+						<li class="current"> <a href="catalog.html">Магазин</a></li>
+						<li> <a href="contacts.html">Контакты</a></li>
+					</ul>
+					<ul class="basket-navigation">
+						<li> <a class="card-icon" href="basket.html">Корзина</a></li>
+					</ul>
+				</div>
+		</nav>
+	</div>
+	</header>
+	<section class="big-tittle">
+		<div class="container">
+			<h1>Магазин готовых шаблонов</h1>
+		</div>
+	</section>
+<main class="main">
+	<div class="container">
+		<div class="main-row">
+			<div class="sidebar">
+				<form method="post" action="https://echo.htmlacademy.ru">
+				<fieldset class="filter-item">
+					<legend>Стоимость:</legend>
+				<div class="range-filter">
+					<div class="range-controls">
+						<div class="scale">
+							<div class="bar"></div>
+						</div>
+						<div class="toggle toggle-min"></div>
+						<div class="toggle toggle-max"></div>
+					</div>
+					<div class="price-controls">
+						<label>от <input type="text" name="min-price" value="0">
+						</label>
+						<label>до <input type="text" name="max-price" value="15000">
+						</label>
+					</div>
+				</div>
+				</fieldset>
+				<div class="net">
+						<h2>Сетка:</h2>
+					<ul class="net-option">
+						<li><input type="radio" id="adaptive" name="layout" checked>
+						<label for="adaptive">Адаптивная</label>
+						</li>
+						<li>
+						<input type="radio" id="fixed" name="layout">
+						<label for="fixed">Фиксированая</label>
+						</li>
+						<li>
+						<input type="radio" id="rubber" name="layout">
+						<label for="rubber">Резиновая</label>
+						</li>
+					</ul>	
+				</div>
+				<div class="features">
+						<h2>Особенности:</h2>
+					<ul class="features-option">
+						<li><input type="checkbox" id="slider" checked>
+						<label for="slider">Слайдер</label>
+						</li>
+						<li>
+						<input type="checkbox" id="features-block">
+						<label for="features-block">Блок преимуществ</label>
+						</li>
+						<li>
+						<input type="checkbox" id="news" checked>
+						<label for="news">Новости</label>
+						</li>
+						<li>
+						<input type="checkbox" id="gallery">
+						<label for="gallery">Галерея</label>
+						</li>
+						<li>
+						<input type="checkbox" id="trash-basket">
+						<label for="trash-basket">Корзина</label>
+						</li>
+					</ul>
+				</div>
+					<a href="#" class="button-show">Показать</a>
+				</form>
+			</div>
+				<section class="site-catalog">
+				<div class="sort">
+						<h3>Сортировать:</h3> <a class="active" href="#">По цене</a> <a href="#">По типу</a> <a href="#">По названию</a>
+					<div class="arrows">
+						<a class="arrow-down" href="#"></a>
+						<a class="arrow-up" href="#"></a>
+					</div>
+				</div>
+					<div class="container">
+						<figure class="template">
+							<div class="header-browser">
+								<img class="header-image" src="img/header-image.png" alt="Управление браузером">
+							</div>
+							<img src="img/img-sedona.png" width="360" height="560" alt="Седона">
+							<div class="card-info">
+								<h3 class="card-title">SEDONA</h3>
+								<p class="card-about">Информационный сайт<br> для туристов</p> 
+							<a class="maket-price" href="#">9 900 РУБ.</a> 
+							</div>
+						</figure>
+						<figure class="template">
+							<div class="header-browser">
+								<img class="header-image" src="img/header-image.png" alt="Управление браузером">
+							</div>
+							<img src="img/img-pink.png" width="360" height="560" alt="PINK"> 
+							<div class="card-info">
+							<h3 class="card-title">PINK APP</h3>
+							<p class="card-about">Продуктивный лендинг<br> приложения для IOS и Android</p> <a class="maket-price" href="#">9 900 РУБ.</a> </div>
+						</figure>
+						<figure class="template">
+							<div class="header-browser">
+								<img class="header-image" src="img/header-image.png" alt="Управление браузером">
+							</div>
+							<img src="img/img-barbershop.png" width="360" height="560" alt="Borodinski"> 
+							<div class="card-info">
+								<h3 class="card-title">BARBERSHOP</h3>
+								<p class="card-about">Сайт салоны красоты.<br> Для мужчин, да.</p> 
+								<a class="maket-price" href="#">9 900 РУБ.</a> 
+							</div>
+						</figure>
+						<figure class="template">
+							<div class="header-browser">
+								<img class="header-image" src="img/header-image.png" alt="Управление браузером">
+							</div>
+							<img src="img/img-mishka.png" width="360" height="560" alt="Mishka"> 
+							<div class="card-info">
+								<h3 class="card-title">MISHKA</h3>
+								<p class="card-about">Интернет-магазин<br> вязаных игрушек</p> 
+								<a class="maket-price" href="#">9 900 РУБ.</a> 	
+							</div>
+						</figure>
+						<figure class="template">
+							<div class="header-browser">
+								<img class="header-image" src="img/header-image.png" alt="Управление браузером">
+							</div>
+							<img src="img/img-aplus.png" width="360" height="560" alt="Up"> 
+							<div class="card-info">
+								<h3 class="card-title">A PLUS</h3>
+								<p class="card-about">Лендинг курсов повышения<br> квалификации</p> 
+								<a class="maket-price" href="#">9 900 РУБ.</a>
+							</div>				
+						</figure>
+						<figure class="template">
+							<div class="header-browser">
+								<img class="header-image" src="img/header-image.png" alt="Управление браузером">
+							</div>
+							<img src="img/img-kvast.png" width="360" height="560" alt="Kvast"> 
+							<div class="card-info">
+								<h3 class="card-title">КВАСТ</h3>
+								<p class="card-about">Промо-сайт производителя<br> крафтового кваса</p> 
+								<a class="maket-price" href="#">9 900 РУБ.</a> 	
+							</div>
+						</figure>
+					</div>
+					<div> 
+					<ul class="pagination-list">
+						<li class="pagination-item pagination-item-current">
+							<a>1</a> 
+						</li>
+						<li class="pagination-item">
+							<a class="button-number" href="#">2</a>
+						</li>
+						<li class="pagination-item"> 
+							<a class="button-number" href="#">3</a>
+						</li>
+						<a href="#" class="button-next">Следующая</a>
+					</ul>		
+					</div>
+				</section>
+		</div>
+	</div>
+</main>
+	<section class="location">
+		<div class="container">
+			<div class="location-info">
+				<h3>NERDS DESIGN STUDIO</h3>
+				<p>191186, Санкт-Петербург,
+					<br> ул.Б.Конюшенная.д 19/8
+					<br>
+					<br> тел. +7 (812) 275-75-75
+					<br> 
+				</p>
+				<a href="#" class="button button-write">Напишите нам</a>
+			</div>
+		</div>
+	</section>
+	<footer class="main-footer">
+	<div class="container">
+		<div class="share">
+			<a class="social social-vk" href="#"></a>
+			<a class="social social-fb" href="#"></a>
+			<a class="social social-in" href="#"></a>
+		</div>
+		<div class="discount">
+			<h3>Давайте дружить, это выгодно!</h3>
+			<p>Cкидка 10% для друзей из социальных сетей.</p>
+		</div>
+	</div>
+		<div class="write-us">
+		<div class="write-inside">
+			<h3>Напишите нам</h3>
+			<form class="write-us-flex" action="https://echo.htmlacademy.ru" method="get">
+				<div class="input-flex w50">
+					<label for="write-name">
+						Ваше имя:
+					</label>
+					<input type="text" placeholder="Имя Фамилия" id="write-name" class="text-input" name="name_input">
+				</div>
+				<div class="input-flex w50">
+					<label for="write-email">
+						Ваш e-mail:
+					</label>
+					<input type="text" placeholder="email@example.com" id="write-email" class="text-input" name="email">
+				</div>
+				<div class="input-flex">
+					<label for="write-text">
+					Текст письма:
+					</label>
+					<textarea placeholder="В свободной форме" id="write-text" cols="85" rows="4" name="big-text"></textarea>
+					<button type="sumbit" class="button-submit" >Отправить</button>
+					<button class="close" type="button">Закрыть</button>
+				</div>
+			</form>
+			</div>
+		</div>
+	<div class="overlay"></div>
+	</footer>
+	<script>
+		var linkAbout = document.querySelector(".button-write");
+		var aboutPopup = document.querySelector(".write-us");
+		var aboutClose = aboutPopup.querySelector(".close");
+		var form = aboutPopup.querySelector("form");
+		var name = aboutPopup.querySelector("[name=name_input]");
+		var email = aboutPopup.querySelector("[name=email]");
+		var textarea = aboutPopup.querySelector("[name=big-text]");
+		var overlay = document.querySelector(".overlay")
+		linkAbout.addEventListener("click", function(evt) {
+			evt.preventDefault();
+			aboutPopup.classList.add("write-us-open");
+			overlay.classList.add("overlay-on");
+		});
+		aboutClose.addEventListener("click", function(evt) {
+			evt.preventDefault();
+			aboutPopup.classList.remove("write-us-open");
+			overlay.classList.remove("overlay-on");
+			aboutPopup.classList.remove("write-error");
+		});
+		window.addEventListener("keydown", function(evt) {
+			if (evt.keyCode === 27) {
+				evt.preventDefault();
+				if (aboutPopup.classList.contains("write-us-open")) {
+					aboutPopup.classList.remove("write-us-open");
+					overlay.classList.remove("overlay-on");
+					aboutPopup.classList.remove("write-error");
+				}
+			}
+		});
+		form.addEventListener("submit", function(evt) {
+			if (!name.value && !email.value) {
+				evt.preventDefault();
+				aboutPopup.classList.remove("write-error");
+				aboutPopup.offsetHeight = aboutPopup.offsetHeight;
+				aboutPopup.classList.add("write-error");
+			} 
+		});
+		overlay.addEventListener("click", function(evt) {
+			aboutPopup.classList.remove("write-us-open");
+			overlay.classList.remove("overlay-on");
+			aboutPopup.classList.remove("write-error");
+		})
+	</script>
+</body>
+
+</html>
